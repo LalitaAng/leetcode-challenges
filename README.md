@@ -7,10 +7,13 @@ This repository contains my solutions to [LeetCode](https://leetcode.com/) probl
 
 ## Problem Categories
 - **Arrays**
+  - problem1
 - **Strings**
+  - problem20
 - **Dynamic Programming**
 - **Graphs**
 - **Trees**
+  - problem21
 - **Sorting & Searching**
 - **Math / Bit Manipulation**
 
