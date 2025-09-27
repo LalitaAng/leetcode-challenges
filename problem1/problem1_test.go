@@ -2,6 +2,7 @@ package problem1
 
 import (
 	"reflect"
+	"sort"
 	"testing"
 )
 
@@ -18,8 +19,12 @@ func TestTwoSum(t *testing.T) {
 
 	for _, tt := range tests {
 		got := TwoSum(tt.nums, tt.target)
+
+		sort.Ints(got)
+        sort.Ints(tt.want)
+
 		if !reflect.DeepEqual(got, tt.want) {
-			t.Errorf("TwoSum(%v, %d) = %v; want %v", tt.nums, tt.target, got, tt.want)
+			t.Errorf("TwoSum(%v, %v) = %v; want %v", tt.nums, tt.target, got, tt.want)
 		}
 	}
 }
